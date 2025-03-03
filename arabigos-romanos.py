@@ -15,7 +15,7 @@ substractValues = {
 
 def arab_to_rom(arab):
     roman = ''
-    if arab < 1 or arab > 3999:
+    if arab < 1 or arab > 3999 or type(arab) != int:
         print('El número ingresado no es válido')
         return
     arab = list(str(arab))
